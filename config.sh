@@ -4,14 +4,14 @@
 # See https://cloud.google.com/compute/docs/gpus/add-gpus#create-new-gpu-instance for more details.
 
 # the name of the created instance
-INSTANCE_NAME=lila0-v100
+INSTANCE_NAME=lila2
 
 # can be either "best" or "elf" for the facebook opengo converted weights (currently stronger, slower)
 NETWORK=best
 # NETWORK=elf
 
 # pick a nearby zone that has the gpu you want - see https://cloud.google.com/compute/docs/gpus/
-ZONE=europe-west4-a
+ZONE=europe-west4-c
 
 # can be k80, p100, v100 - see README.md
 GPU_TYPE=nvidia-tesla-v100
@@ -23,7 +23,7 @@ GPU_COUNT=1
 CPU_COUNT=6
 
 # 15GB should be plenty of space for just leela zero.. You might get away with less
-DISK_SIZE=10GB
+DISK_SIZE=15GB
 
 # Set the RAM here - not sure how much is needed for leela
 MEMORY=16GB
