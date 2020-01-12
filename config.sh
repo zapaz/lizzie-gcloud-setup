@@ -4,6 +4,7 @@
 # See https://cloud.google.com/compute/docs/gpus/add-gpus#create-new-gpu-instance for more details.
 
 # the name of the created instance
+#INSTANCE_NAME=leela0-v100-2
 INSTANCE_NAME=leela0-v100-4
 
 # can be either "best" or "elf" for the facebook opengo converted weights (currently stronger, slower)
@@ -13,6 +14,9 @@ NETWORK=best
 # pick a nearby zone that has the gpu you want - see https://cloud.google.com/compute/docs/gpus/
 #ZONE=europe-west4-b
 ZONE=asia-east1-c
+#ZONE=europe-west4-a
+#ZONE=europe-west4-b
+#ZONE=asia-east1-c
 
 # can be k80, p100, v100 - see README.md
 GPU_TYPE=nvidia-tesla-v100
