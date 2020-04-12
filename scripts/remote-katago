@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+#Script for executing leelaz remotely.
+
+set -eu
+source ../config.sh
+gcloud compute ssh "$INSTANCE_NAME" --zone "$ZONE" --command "/katago/katago gtp"
+

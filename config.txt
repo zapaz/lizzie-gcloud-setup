@@ -14,7 +14,7 @@
       false
     ],
     "engine-command-list": [
-      "",
+      "../scripts/remote-leela0",
       "",
       "",
       "",
@@ -30,7 +30,7 @@
     "_comment": "note, network-file is obselete in Lizzie 0.7+, ignore network-file, kept for compatibility",
     "max-game-thinking-time-seconds": 10,
     "avoid-keep-variations": 30,
-    "engine-command": "../scripts/remote-leelaz",
+    "engine-command": "../scripts/remote-katago",
     "print-comms": true,
     "show-lcb-winrate": false
   },
@@ -60,14 +60,14 @@
     "show-variation-graph": false,
     "show-dynamic-komi": true,
     "gtp-console-style": "body {background:#000000; color:#d0d0d0; font-family:Consolas, Menlo, Monaco, 'Ubuntu Mono', monospace; margin:4px;} .command {color:#ffffff;font-weight:bold;} .winrate {color:#ffffff;font-weight:bold;} .coord {color:#ffffff;font-weight:bold;}",
-    "katago-scoremean-alwaysblack": false,
+    "katago-scoremean-alwaysblack": true,
     "katago-notshow-winrate": false,
     "minimum-blunder-bar-width": 3,
     "large-winrate": true,
     "confirm-exit": false,
-    "show-katago-estimate-onmainboard": true,
+    "show-katago-estimate-onmainboard": false,
     "window-maximized": false,
-    "show-katago-estimate": false,
+    "show-katago-estimate": true,
     "show-best-moves": true,
     "board-color": [
       217,
@@ -81,7 +81,7 @@
     "replay-branch-interval-seconds": 1,
     "panel-ui": false,
     "weighted-blunder-bar-height": true,
-    "katago-estimate-mode": "small",
+    "katago-estimate-mode": "size",
     "theme": "yasnaya",
     "show-winrate-in-suggestion": true,
     "show-scoremean-in-suggestion": true,
@@ -90,8 +90,8 @@
       768
     ],
     "new-move-number-in-branch": true,
-    "show-katago-boardscoremean": false,
-    "show-playouts-in-suggestion": true,
+    "show-katago-boardscoremean": true,
+    "show-playouts-in-suggestion": false,
     "limit-branch-length": 0,
     "board-position-proportion": 4,
     "show-blunder-bar": true,
@@ -101,7 +101,7 @@
     "handicap-instead-of-winrate": false,
     "large-subboard": false,
     "dynamic-winrate-graph-width": true,
-    "show-subboard": false,
+    "show-subboard": true,
     "show-katago-scoremean": true,
     "board-size": 19
   }
